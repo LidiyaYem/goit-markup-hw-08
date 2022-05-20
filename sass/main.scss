@@ -1,0 +1,31 @@
+/* білий: #FFFFFF; */
+/* чорний #000000; */
+/* колір первинного тексту #212121; */
+/* колір вторинного тексту #757575; */
+/* колір для адреси посилань внизу rgba(255, 255, 255, 0.6);*/
+/* акцент #2196F3; */
+
+/* колір фона первинний #E5E5E5 */
+/* колір фона вторинний #F5F4FA; */
+/* колір фона hero і footer #2F303A; */
+/* колір фона header #FFFFFF; */
+
+/* Utils */
+
+@import './utils/variables';
+@import './utils/reset';
+
+/* Components */
+
+@import './components/base';
+@import './components/logo';
+@import './components/header';
+@import './components/hero';
+@import './components/titles';
+@import './components/button';
+@import './components/modal';
+@import './components/formmodal';
+@import './components/index-sections';
+@import './components/portfolio-sections';
+@import './components/footer';
+

@@ -1,0 +1,20 @@
+.logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    color: black;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+    &__web {
+        color: var(--accent-color);
+    }
+    
+    &__studio {
+        color: var(--hero-text-color);
+    }
+
+}
