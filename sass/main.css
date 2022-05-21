@@ -140,7 +140,7 @@ body {
 }
 
 .site-auth {
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-left: 0;
 }
@@ -177,6 +177,16 @@ body {
 .site-auth__item:hover .site-auth__icon, .site-auth__item:focus .site-auth__icon {
   fill: var(--accent-color);
   cursor: pointer;
+}
+
+.menu-open-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
 }
 
 .hero {

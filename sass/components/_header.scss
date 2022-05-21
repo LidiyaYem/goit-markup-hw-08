@@ -70,7 +70,7 @@
 }
 
 .site-auth {
-    display: flex;
+    display: none;
     margin-left: auto;
     padding-left: 0;
 
@@ -119,4 +119,14 @@
         cursor: pointer;
     }
 
+}
+
+.menu-open-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
 }
