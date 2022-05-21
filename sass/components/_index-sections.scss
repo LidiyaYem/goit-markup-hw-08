@@ -177,6 +177,27 @@
 }
 }
 
+.team-member__image {
+    display: block;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+}
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+}
+
+}
+
 
 // .team-member:not(:last-child) {
 //     margin-right: 30px;
@@ -285,7 +306,10 @@
 // }
 
 .client__info {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding: 16px 32px;
     // min-width: 170px;
     // height: auto;
