@@ -287,8 +287,8 @@
 .client__info {
     display: block;
     padding: 16px 32px;
-    width: 170px;
-    height: 92px;
+    // min-width: 170px;
+    // height: auto;
     box-sizing: border-box;
     background-position: center;
     background-size: contain;
