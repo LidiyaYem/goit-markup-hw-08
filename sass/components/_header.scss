@@ -71,6 +71,15 @@
 
         background-color: var(--accent-color);
         border-radius: 2px;
+
+        @media screen and (min-width: 768px) {
+            bottom: -4.1px; 
+        }
+
+        @media screen and (min-width: 1200px) {
+            bottom: -2.7px; 
+        }
+
 }
     &__link--current{
         color: var(--accent-color);
@@ -176,12 +185,6 @@
         cursor: pointer;
     }
 
-}
-
-@media screen and (min-width: 768px) {
-    .site-auth__item:not(:last-child) {
-        margin-bottom: 10px;
-    }
 }
 
 .menu-open-btn {
