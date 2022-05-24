@@ -44,8 +44,44 @@
     // height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimg-480.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .overlay {
+            background-image: url(../images/heroimg-480-2x.jpg);
+        }
+    }
+
+@media screen and (min-width: 481px) {
+    .overlay {
+        background-image: url(../images/heroimg-768.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .overlay {
+            background-image: url(../images/heroimg-768-2x.jpg);
+        }
+}
+}
+
+@media screen and (min-width: 769px) {
+    .overlay {
+        background-image: url(../images/heroimg.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .overlay {
+            background-image: url(../images/heroimg-2x.jpg);
+        }
+}
 }
