@@ -642,13 +642,31 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) {
+  .modal {
+    min-width: 320px;
+    min-height: 500px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 .modal .button-close {
   position: absolute;
@@ -691,10 +709,15 @@ body {
 }
 
 .form-modal {
-  width: 450px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+}
+@media screen and (min-width: 480px) {
+  .form-modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-modal {
@@ -704,12 +727,22 @@ body {
 .form-modal .form-field {
   display: flex;
   flex-direction: column;
-  margin: 0px 39px 28px 41px;
+  margin: 0px 10px 10px 10px;
+}
+@media screen and (min-width: 480px) {
+  .form-modal .form-field {
+    margin: 0px 39px 10px 41px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-modal .form-field {
+    margin: 0px 39px 28px 41px;
+  }
 }
 .form-modal .form-input {
   display: block;
   position: relative;
-  width: 370px;
+  width: 300px;
   height: 40px;
   padding: 11px 12px 11px 42px;
   background-color: #fff;
@@ -717,6 +750,11 @@ body {
   border-radius: 4px;
   filter: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .form-modal .form-input {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-modal .form-input {
@@ -730,7 +768,7 @@ body {
 .form-modal .form-label {
   display: block;
   position: absolute;
-  top: -25%;
+  top: -15%;
   left: 0;
   margin-bottom: 4px;
   font-size: 12px;
@@ -738,9 +776,14 @@ body {
   letter-spacing: 0.01em;
   color: #757575;
 }
+@media screen and (min-width: 1200px) {
+  .form-modal .form-label {
+    top: -25%;
+  }
+}
 .form-modal .textarea {
   padding: 12px 16px;
-  width: 370px;
+  width: 300px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -749,6 +792,11 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .form-modal .textarea {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-modal .textarea {
@@ -760,13 +808,18 @@ body {
   border: 1px solid var(--accent-color);
 }
 .form-modal .button {
-  margin: 31px 125px 40px 125px;
+  margin: 0px 60px 40px 60px;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .form-modal .button {
+    margin: 0px 125px 40px 125px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-modal .button {
@@ -775,10 +828,15 @@ body {
 }
 .form-modal .icon {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 12px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .form-modal .icon {
+    top: 50%;
+  }
 }
 .form-modal .icon.person {
   color: #212121;
@@ -804,12 +862,17 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: 0px 51px 30px 39px;
+  margin: 0px 10px 30px 10px;
   padding-left: 23px;
+}
+@media screen and (min-width: 480px) {
+  .form-field-checkbox {
+    margin: 0px 40px 30px 39px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-field-checkbox {
-    margin-left: 52px;
+    margin: 0px 51px 31px 52px;
   }
 }
 
@@ -819,8 +882,18 @@ body {
   -webkit-appearance: none;
           appearance: none;
   position: absolute;
-  width: 420px;
+  width: 250px;
   height: 24px;
+}
+@media screen and (min-width: 480px) {
+  .checkbox {
+    width: 372px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    width: 420px;
+  }
 }
 
 .checkbox-label {
@@ -1464,6 +1537,7 @@ body {
   transform: translateY(-50%);
   letter-spacing: 0.06em;
 }
+
 .form-label {
   position: absolute;
   top: 21%;
